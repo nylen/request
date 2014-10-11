@@ -90,7 +90,7 @@ tape('setup', function(t) {
 //
 //   TEST_PROXY_HARNESS=y node tests/test-proxy.js
 
-if (process.env.TEST_PROXY_HARNESS) {
+if (true || process.env.TEST_PROXY_HARNESS) {
 
   runTest('should fail with "proxy response should not be called"', {
     proxy : s.url

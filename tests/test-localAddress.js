@@ -19,6 +19,7 @@ tape('bind to local address', function(t) {
     localAddress: '127.0.0.1'
   }, function(err, res) {
     t.notEqual(err, null)
+    t.equal(err.message, 'this is not the error message but it should show in npm test output')
     t.equal(res, undefined)
     t.end()
   })
